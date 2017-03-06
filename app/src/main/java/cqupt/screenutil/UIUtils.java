@@ -5,8 +5,6 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.Toast;
 
-import cqupt.myinvest.common.MyApplication;
-
 /**
  * 操控UI界面的工具类.
  */
