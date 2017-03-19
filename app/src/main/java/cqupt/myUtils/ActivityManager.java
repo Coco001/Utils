@@ -1,4 +1,4 @@
-package cqupt.screenutil;
+package cqupt.myUtils;
 
 import android.app.Activity;
 

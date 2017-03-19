@@ -1,4 +1,4 @@
-package cqupt.screenutil.randomLayout;
+package cqupt.myUtils.randomLayout;
 
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;

@@ -1,4 +1,4 @@
-package cqupt.screenutil.randomLayout;
+package cqupt.myUtils.randomLayout;
 
 import android.content.Context;
 import android.util.AttributeSet;

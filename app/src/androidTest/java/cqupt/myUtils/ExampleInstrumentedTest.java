@@ -1,4 +1,4 @@
-package cqupt.screenutil;
+package cqupt.myUtils;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

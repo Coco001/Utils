@@ -1,4 +1,4 @@
-package cqupt.screenutil;
+package cqupt.myUtils;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
