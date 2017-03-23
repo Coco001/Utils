@@ -1,7 +1,9 @@
 package cqupt.myUtils;
 
+import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.os.Handler;
 
 /**
@@ -26,5 +28,16 @@ public class MyApplication extends Application {
 
         //设置未捕获异常的处理器
 //        CrashHandler.getInstance().init();
+    }
+
+    // 客户端版本版本号
+    public static String getVersionName(Activity activity) {
+        String version = null;
+        try {
+            version = String.valueOf(activity.getPackageManager().getPackageInfo(activity.getPackageName(), 0).versionName);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        return version;
     }
 }
