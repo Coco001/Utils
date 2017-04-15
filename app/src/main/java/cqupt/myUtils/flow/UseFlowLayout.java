@@ -10,7 +10,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Random;
-import cqupt.myUtils.listview.UIUtils;
+
+import cqupt.myUtils.UIUtils;
 
 /**
  * 流式布局的简单使用.
@@ -25,7 +26,7 @@ public class UseFlowLayout {
     }
 
     public View onCreateSuccessView() {
-        int padding = UIUtils.dip2px(15);
+        int padding = UIUtils.dp2px(15);
         ScrollView view = new ScrollView(UIUtils.getContext());
         view.setPadding(padding, padding, padding, padding);
         //ScrollView view = (ScrollView) View.inflate(UIUtils.getContext(), R.layout.fragment_hot, null);
@@ -45,7 +46,7 @@ public class UseFlowLayout {
             int g = 30 + random.nextInt(222);
             int b = 30 + random.nextInt(200);
             int color = 0xffcecece;//按下后偏白的背景
-            Drawable drawable = DrawableUtils.getStateListDrawable(Color.rgb(r, g, b), color, UIUtils.dip2px(8));
+            Drawable drawable = DrawableUtils.getStateListDrawable(Color.rgb(r, g, b), color, UIUtils.dp2px(8));
             textView.setBackgroundDrawable(drawable);
             flowLayout.addView(textView);
             textView.setOnClickListener(new View.OnClickListener() {
